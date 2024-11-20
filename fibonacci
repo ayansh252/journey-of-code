@@ -1,0 +1,40 @@
+#include<stdio.h>
+int m=0;
+int n=1;
+void fib( int a) {
+    int i;
+    int temp=m+n;
+    for(i=3; i<=a; i++)
+    {
+        printf("%d ",temp);
+        m=n;
+        n=temp;
+        temp=m+n;
+    }
+}
+void fibonacci(int b) {
+
+    if(b<1)
+    {   printf("enter valid number to print fibonacci series");
+    }
+    else if(b==1)
+    {
+        printf("%d ",n);
+    }
+
+    else if(b==2)
+    {   printf("fibonacci series is %d %d ",m,n);
+    }
+    else
+    {   printf("fibonacci series is %d %d ",m,n);
+        fib(b);
+    }
+}
+void main()
+{   int a;
+    printf("enter the nimber upto which fibonacci seres is required=");
+    scanf("%d",&a);
+     fibonacci(a);
+
+    
+}
