@@ -1,0 +1,39 @@
+#include<stdio.h>   
+#include<math.h>
+int convertdecimaltobinary(int n){
+    int rem=0,res=0,p=0;
+    while(n!=0)
+    {
+        rem=n%10;
+        n=n/10;
+        res=res+rem*pow(2,p);
+        p++;
+    }
+    return res;
+}
+void convertbinarytodecimal(int n)
+{   int i,a[20];
+    for(i=0;n>0;i++)    
+{    
+a[i]=n%2;    
+n=n/2;    
+}    
+printf("\nBinary of Given Number is=");    
+for(i=i-1;i>=0;i--)    
+{    
+printf("%d",a[i]);    
+}    
+}
+int main()
+{
+    int b,d,x,y;
+    printf("enter binary number to convert it into decimal number:");
+    scanf("%d",&b);
+   x=convertdecimaltobinary(b);
+   printf("binary number is=%d",x);
+   printf("\nenter decimal number to convert it into binary number:");
+   scanf("%d",&d);
+   convertbinarytodecimal(d);
+   
+    return 0;
+}
