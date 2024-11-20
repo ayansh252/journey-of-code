@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main() {
+int   i, loc,n;
+printf("enter the size of array=");
+scanf("%d",&n);
+int arr[n];
+for (i = 0; i < n; i++) {
+printf("array elements are a[%d]=",i);
+scanf("%d", &arr[i]); }
+printf("\nold array lements are=");
+for(i=0;i<n;i++)
+{
+printf("%d",arr[i]);}
+
+printf("\nLocation of the element to be deleted :");
+scanf("%d", &loc);
+while (loc < n) {
+arr[loc - 1] = arr[loc];
+loc++; }
+for (i = 0; i < n-1; i++){
+printf("%d", arr[i]);}
+return 0;
+}
