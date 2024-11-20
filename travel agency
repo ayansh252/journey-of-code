@@ -1,0 +1,76 @@
+#include <stdio.h>
+struct drivers
+{
+  char name[34];
+  char dlNO[45];
+  char route[100];
+  int kms;
+} ;
+int main() {
+    int n,i;
+  struct drivers d1,d2,d3;
+ 
+    printf("\nenter the details of driver first\n");
+
+    printf("\nenter the name of first driver\n");
+    scanf("%s",&d1.name);
+    
+    printf("\nenter the DLNO of driver first\n");
+    scanf("%s",& d1.dlNO);
+    
+    printf("\nenter the route of first driver \n");
+    scanf("%s",&d1.route);
+    
+    printf("\n enter the driver first kms he drive\n");
+    scanf("%d",&d1.kms);
+
+  printf("\nenter the details of driver second\n");
+
+    printf("\nenter the name of driver second\n");
+    scanf("%s",&d2.name);
+    
+    printf("\nenter the DLNO of second driver\n");
+    scanf("%s",& d2.dlNO);
+    
+    printf("\nenter the route of second driver \n");
+    scanf("%s",&d2.route);
+    
+    printf("\n enter the driver second kms he drive\n");
+    scanf("%d",&d2.kms);
+    
+     printf("\nenter the details of driver third\n");
+
+    printf("\nenter the name of driver third\n");
+    scanf("%s",&d3.name);
+    
+    printf("\nenter the DLNO of  third  driver\n");
+    scanf("%s",& d3.dlNO);
+    
+    printf("\nenter the route of  third driver \n");
+    scanf("%s",&d3.route);
+    
+    printf("enter the driver third kms he drive\n");
+    scanf("%d",&d3.kms);
+
+printf("*****details 0f drivers****\n");
+printf("details of first driver:");
+printf("\nname=%s",d1.name);
+printf("\nDLNO=%s",d1.dlNO);
+printf("\nroute=%s",d1.route);
+printf("\n kms=%d\n",d1.kms);
+printf("\n");
+printf("\n");
+printf("details of second driver:");
+printf("\nname=%s",d2.name);
+printf("\nDLNO=%s",d2.dlNO);
+printf("\nroute=%s",d2.route);
+printf("\n kms=%d\n",d2.kms);
+printf("\n");
+printf("\n");
+printf("details of third driver:");
+printf("\nname=%s",d3.name);
+printf("\nDLNO=%s",d3.dlNO);
+printf("\nroute=%s",d3.route);
+printf("\n kms=%d",d3.kms);
+    return 0;
+}
