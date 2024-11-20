@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+   int n,m,i;
+   printf("enter the size of  array=");
+   scanf("%d",&n);
+   int a[n];
+   printf("\nenter element of first array\n");
+   for(i=0;i<n;i++)
+   {
+       printf(" element of first arr[%d]=",i);
+       scanf("%d",&a[i]);
+   }
+  int b[n];
+  printf("\nenter element of second array\n");
+   for(i=0;i<n;i++)
+   {
+       printf("enter element of second arr[%d]=",i);
+       scanf("%d",&b[i]);
+   }
+   int sum[n];
+   for(i=0;i<n;i++)
+   {
+       sum[i]=a[i]+b[i];
+   }
+   printf("\nsum of arrays=\n");
+   for(i=0;i<n;i++)
+   {
+       printf("\nsum[%d]=%d",i,sum[i]);
+   }
+    return 0;
+}
