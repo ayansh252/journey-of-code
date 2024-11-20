@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main() {
+    int n,m,i=0;
+    char *ptr;
+    printf("enter the number of employee in your company=");
+    scanf("%d",&m);
+    int num=m;
+    while(i<m)
+    {
+        printf("employee:%d enter number of character in  your employee id=",i+1);
+        scanf("%d",& n);
+        ptr=(char*)malloc((n+1)*sizeof(char));
+        printf("enter your employee id=");
+        scanf("%s",ptr);
+        free(ptr);
+        i=i+1;
+    }
+
+    return 0;
+}
